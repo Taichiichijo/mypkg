@@ -1,17 +1,35 @@
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Int16
+from std_msgs.msg import String
+import random
 
 
-rclpy.init()
-node = Node("listener")
+class Listener(Node):
+    def __init__(self):
+        super().__init__("listener")
+        self.sub = self.create_subscription(String, "greeting", self.cb, 10)
+        self.responses = [
+            "Hi there!",
+            "Hello!",
+            "Nice to see you!",
+            "Howdy!",
+            "Hey, what's up?",
+            "Good to hear from you!"
+        ]
 
-
-def cb(msg):
-    global node
-    node.get_logger().info("Listen: %d" % msg.data)
+    def cb(self, msg):
+        self.get_logger().info(f"Listener received: {msg.data}")
+        response = random.choice(self.responses)
+        self.get_logger().info(f"Listener responds: {response}")
 
 
 def main():
-    sub = node.create_subscription(Int16, "countup", cb, 10)
+    rclpy.init()
+    node = Listener()
     rclpy.spin(node)
+    node.destroy_node()
+    rclpy.shutdown()
+
+
+if __name__ == "__main__":
+    main()

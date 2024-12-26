@@ -1,24 +1,31 @@
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Int16
+from std_msgs.msg import String
 
 
 class Talker(Node):
     def __init__(self):
-       super().__init__("talker")
-       self.pub = self.create_publisher(Int16, "countup", 10)
-       self.n = 0
-       self.create_timer(0.5, self.cb)
+        super().__init__("talker")
+        self.pub = self.create_publisher(String, "greeting", 10)
+        self.create_timer(2.0, self.cb)  # 2秒ごとにメッセージを送信
+        self.messages = ["Hello", "Hi there!", "Good morning", "Howdy", "Hey!"]
+        self.index = 0
 
-       
     def cb(self):
-        msg = Int16()
-        msg.data = self.n
+        msg = String()
+        msg.data = self.messages[self.index]
+        self.get_logger().info(f"Talker says: {msg.data}")
         self.pub.publish(msg)
-        self.n += 1
+        self.index = (self.index + 1) % len(self.messages)  # メッセージを順番に送信
 
 
 def main():
     rclpy.init()
     node = Talker()
     rclpy.spin(node)
+    node.destroy_node()
+    rclpy.shutdown()
+
+
+if __name__ == "__main__":
+    main()
