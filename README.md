@@ -7,15 +7,14 @@
 talkerとlistenerであいさつを交わす
 ## インストール方法
 ~~~
-$git clone https://github.com/Taichiichijo/mypkg.git
-$cd ros2_ws
+$ git clone https://github.com/Taichiichijo/mypkg.git
+$ cd ros2_ws
 ~~~
 ## 実行方法
 ~~~
-$ros2 launch mypkg talk_listen.launch.py
+$ ros2 launch mypkg talk_listen.launch
 ~~~
-
-## 実行例
+結果
 ~~~
 [talker-1] [INFO] [1735275893.946049236] [talker]: Talker says: Hello
 [listener-2] [INFO] [1735275893.954848275] [listener]: Listener received: Hello
