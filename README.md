@@ -43,4 +43,10 @@ talkerがランダムで挨拶をlistenerに送り、挨拶を受け取ったlis
 
  　　-https://ryuichiueda.github.io/slides_marp/robosys2024/lesson8.html
 
+    -https://ryuichiueda.github.io/slides_marp/robosys2024/lesson9.html
+
+    -https://ryuichiueda.github.io/slides_marp/robosys2024/lesson10.html
+
+    -https://ryuichiueda.github.io/slides_marp/robosys2024/lesson11.html
+
  -2024 Taichi Ichijo
