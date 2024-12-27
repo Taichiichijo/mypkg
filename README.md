@@ -25,6 +25,12 @@ $ ros2 launch mypkg talk_listen.launch
 ~~~
 
 talkerがランダムで挨拶をlistenerに送り、挨拶を受け取ったlistenerがランダムに挨拶をする
+## トピック
+greeting : ノード間でデータをやりとりするための通信チャンネル
+## ノード
+talker : 定期的に挨拶を送信し続ける
+
+listener : 受け取った挨拶に対してランダムに挨拶をかえす。
 
 ## 必要なソフトウェア
 - python
