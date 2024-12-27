@@ -7,11 +7,12 @@
 talkerとlistenerであいさつを交わす
 ## インストール方法
 ~~~
-git clone
+$git clone https://github.com/Taichiichijo/mypkg.git
+$cd ros2_ws
 ~~~
 ## 実行方法
 ~~~
-ros2 launch mypkg talk_listen.launch.py
+$ros2 launch mypkg talk_listen.launch.py
 ~~~
 
 ## 実行例
