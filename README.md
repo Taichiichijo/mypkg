@@ -28,4 +28,4 @@ talkerがランダムで挨拶をlistenerに送り、挨拶を受け取ったlis
   
 - ROS2
 ## テスト環境
-
+- ubuntu-22.04
