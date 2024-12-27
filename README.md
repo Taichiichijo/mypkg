@@ -22,3 +22,10 @@ ros2 launch mypkg talk_listen.launch.py
 ~~~
 
 talkerがランダムで挨拶をlistenerに送り、挨拶を受け取ったlistenerがランダムに挨拶をする
+
+## 必要なソフトウェア
+- python
+  
+- ROS2
+## テスト環境
+
