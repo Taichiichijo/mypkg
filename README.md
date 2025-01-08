@@ -45,4 +45,4 @@ listener : 受け取った挨拶に対してランダムに挨拶をかえす。
     - [https://ryuichiueda.github.io/slides_marp/robosys2024/lesson11.html](https://ryuichiueda.github.io/slides_marp/robosys2024/lesson11.html)
  　　
 
- -2024 Taichi Ichijo
+ - 2024 Taichi Ichijo
