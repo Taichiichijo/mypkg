@@ -35,7 +35,7 @@ listener : 受け取った挨拶に対してランダムに挨拶をかえす。
 ## 必要なソフトウェア
 - python
   
-- ROS2 hunble
+- ROS2 バージョン： hunble
 ## テスト環境
 - ubuntu-22.04
 ## 作成者
