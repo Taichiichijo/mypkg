@@ -4,12 +4,8 @@
 [![test](https://github.com/Taichiichijo/mypkg/actions/workflows/test.yml/badge.svg)]
 (https://github.com/Taichiichijo/mypkg/actions/workflows/test.yml/)
 
-talkerとlistenerであいさつを交わす
-## インストール方法
-~~~
-$ git clone https://github.com/Taichiichijo/mypkg.git
-$ cd ros2_ws
-~~~
+あいさつを交わす
+
 ## 実行方法
 ~~~
 $ ros2 launch mypkg talk_listen.launch
