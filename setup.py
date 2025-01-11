@@ -12,7 +12,6 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        (os.path.join('share', package_name), glob('launch/*.launch'))
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -23,8 +22,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'talker = mypkg.talker:main',
-            'listener = mypkg.listener:main',
+            'greeting = mypkg.greeting:main',
+            
         ],
     },
 )
