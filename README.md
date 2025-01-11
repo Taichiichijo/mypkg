@@ -4,12 +4,8 @@
 [![test](https://github.com/Taichiichijo/mypkg/actions/workflows/test.yml/badge.svg)]
 (https://github.com/Taichiichijo/mypkg/actions/workflows/test.yml/)
 
-talkerとlistenerであいさつを交わす
-## インストール方法
-~~~
-$ git clone https://github.com/Taichiichijo/mypkg.git
-$ cd ros2_ws
-~~~
+あいさつを交わす
+
 ## 実行方法
 ~~~
 $ ros2 launch mypkg talk_listen.launch
@@ -25,16 +21,20 @@ $ ros2 launch mypkg talk_listen.launch
 ~~~
 
 talkerがランダムで挨拶をlistenerに送り、挨拶を受け取ったlistenerがランダムに挨拶をする
+## トピック
+greeting : ノード間でデータをやりとりするための通信チャンネル
+## ノード
+talker : 定期的に挨拶を送信し続ける
+
+listener : 受け取った挨拶に対してランダムに挨拶をかえす。
 
 ## 必要なソフトウェア
-- python
+- python3
   
-- ROS2
+- ROS2 バージョン : hunble
 ## テスト環境
 - ubuntu-22.04
-## 作成者
-23C1015
-未来ロボティクス学科所属
+
 ## ライセンスや著作権
  - このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布および使用が許可される
 
@@ -45,4 +45,4 @@ talkerがランダムで挨拶をlistenerに送り、挨拶を受け取ったlis
     - [https://ryuichiueda.github.io/slides_marp/robosys2024/lesson11.html](https://ryuichiueda.github.io/slides_marp/robosys2024/lesson11.html)
  　　
 
- -2024 Taichi Ichijo
+ - 2024 Taichi Ichijo
