@@ -34,9 +34,9 @@ data: Howdy
 data: Hey!
 ~~~
 ## トピック 
-greeting : ノード間でデータをやりとりするための通信チャンネル
+- greeting : ノード間でデータをやりとりするための通信チャンネル
 ## ノード
-greeting_node : 挨拶を送り続けるノード
+- greeting_node : 挨拶を送り続けるノード
 
 ## 必要なソフトウェア
 - python3
