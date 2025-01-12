@@ -4,7 +4,8 @@
 [![test](https://github.com/Taichiichijo/mypkg/actions/workflows/test.yml/badge.svg)]
 (https://github.com/Taichiichijo/mypkg/actions/workflows/test.yml/)
 
-あいさつを交わす
+## 概要
+このパッケージは、ROS2のパブリッシャとしてランダムに挨拶をする。
 
 ## 実行方法
 ~~~
