@@ -11,23 +11,32 @@
 ~~~
 $ ros2 launch mypkg talk_listen.launch
 ~~~
-結果
+##  取得方法
 ~~~
-[talker-1] [INFO] [1735275893.946049236] [talker]: Talker says: Hello
-[listener-2] [INFO] [1735275893.954848275] [listener]: Listener received: Hello
-[listener-2] [INFO] [1735275893.955478703] [listener]: Listener responds: Good to hear from you!
-[talker-1] [INFO] [1735275895.936374444] [talker]: Talker says: Hi there!
-[listener-2] [INFO] [1735275895.939177966] [listener]: Listener received: Hi there!
-[listener-2] [INFO] [1735275895.940442516] [listener]: Listener responds: Hi there!
+ros2 topic echo /greeting
 ~~~
-
-talkerがランダムで挨拶をlistenerに送り、挨拶を受け取ったlistenerがランダムに挨拶をする
-## トピック
+## 実行例
+~~~
+data: Good morning
+---
+data: Howdy
+---
+data: Hey!
+---
+data: Good morning
+---
+data: Good morning
+---
+data: Hello
+---
+data: Howdy
+---
+data: Hey!
+~~~
+## トピック 
 greeting : ノード間でデータをやりとりするための通信チャンネル
 ## ノード
-talker : 定期的に挨拶を送信し続ける
-
-listener : 受け取った挨拶に対してランダムに挨拶をかえす。
+greeting_node : 挨拶を送り続けるノード
 
 ## 必要なソフトウェア
 - python3
